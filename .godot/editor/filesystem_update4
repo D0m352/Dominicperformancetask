@@ -1,1 +1,4 @@
 res://enemy.tscn
+res://world.tscn
+res://player.tscn
+res://player.gd

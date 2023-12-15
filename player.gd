@@ -11,13 +11,13 @@ func _ready():
 func _process(delta):
 	var Velocity = Vector2.ZERO
 	if Input.is_action_pressed("move_right"):
-		Velocity.x += 50
+		Velocity.x += 100
 	if Input.is_action_pressed("move_left"):
-		Velocity.x -= 50
+		Velocity.x -= 100
 	if Input.is_action_pressed("move_up"):
-		Velocity.y -= 50
+		Velocity.y -= 100
 	if Input.is_action_pressed("move_down"):
-		Velocity.y += 50
+		Velocity.y += 100
 	
 	if Velocity.length() > 0:
 		position += Velocity * delta
