@@ -3,16 +3,17 @@
 [ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://enemy.png" id="1_sbm4n"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_iyy6q"]
-radius = 133.0
+radius = 86.2889
 
 [node name="Enemy" type="RigidBody2D"]
 gravity_scale = 2.66454e-15
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(251, 172)
-scale = Vector2(0.6375, 0.6625)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_sbm4n")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(275, 175)
+position = Vector2(261, 175)
+scale = Vector2(0.845891, 0.790715)
 shape = SubResource("CircleShape2D_iyy6q")
